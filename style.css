@@ -1,0 +1,169 @@
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+*{
+  outline: none;
+}
+   body {
+    background-color: #333333;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color:  #fff;
+    overflow-x: hidden;
+   
+
+}
+
+#container {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width:  1024px;
+}  
+
+button {
+    /* width: 20%; */
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #B9090B;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0px 25px;
+    cursor: pointer;
+    min-width:  290px;
+
+    } 
+
+
+
+      /*cabeçalho*/
+header {
+    width: 100%;
+    background-color: #B9090B;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+
+}
+
+
+.logo{
+        width: 200px;
+        margin: 10px;
+}
+   
+
+@media  screen and (min-width: 768px ){
+        #container {
+            max-width: 730px;
+        }
+         #info__poster{
+          width:  30%;
+          
+        }
+        #info__title, #info__summary, #info__directory, #info__category, #info__year, #info__time{
+          width: 65%;
+           float: right; 
+        }
+
+}
+
+@media screen and (min-width: 992px){
+        #container {
+                 width: 970px;
+        }
+       
+        
+ 
+
+}
+
+@media screen and (min-width: 1200px){
+        #container {
+            width: 1024px;
+        }
+        
+}
+
+
+
+
+
+/*corpo*/
+
+
+.row{
+  width: 100%;
+    float: left;
+    margin: 20px 0 20px 0;
+    color: #999999;
+
+
+ }
+
+ 
+/*busca*/
+
+.field__search{
+  height: 40px;
+  border-radius: 4px;
+     color: #999999;
+    background-color: #171717;
+    border: none;
+    padding-left: 20px;
+    width: 40%;
+    font-size: 16px;
+    margin-top: 20px;
+     min-width:  275px;
+     margin-bottom: 20px;
+  
+}
+
+
+.t__center{
+  text-align: center;
+}
+
+
+.strong{
+  font-weight: bold;
+  margin-right: 5px;
+
+}
+
+#info__title{
+
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+
+#info__poster{
+  float:  left;
+  }
+
+#info__title, #summary, #info__directory, #info__category, #info__year, #info__time{
+  margin-top: 10px;
+  font-size: 16px;
+
+}
+
+footer{
+   background-color: #B9090B; 
+   color: #fff;
+   text-align: center;
+   float: left;
+   width:   100%;
+   height:  30px;
+   margin:  0 auto;
+   padding: 5px;
+   font-size: 12px;
+   margin-bottom: 0;
+   position: relative;  
+   bottom:  0;
+
+}
+
+

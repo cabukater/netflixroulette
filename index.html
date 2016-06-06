@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Net Flix Roulette Search</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>    
+      </script>
+   </head>
+   <body>
+      <header>
+         <img src="http://netflixroulette.net/img/logo.png" class="logo">
+      </header>
+      <div ng-app="myApp" id="container">
+         <div ng-controller="NetflixController">
+            <div class="row t__center">
+               <input ng-model="title" class="field__search" />
+               <button ng-click="get()">Search</button>
+            </div>
+               <div id="info__title"></div>
+               <img id="info__poster" src="#"/>
+               <div id="info__summary"></div>
+               <div id="info__directory"></div>
+               <div id="info__category"></div>
+               <div id="info__year"></div>
+               <div id="info__time"></div>
+           
+         </div>
+      </div>
+      <footer>
+        Camila Assis -2016
+
+      </footer>
+      <script src="js/index.js"></script>
+   </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Teste Dev Pismo</title>
+      <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+      body {
+    background-color: #333333;
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#container {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}      
+
+@media  screen and (min-width: 768px ){
+        #container {
+            max-width: 730px;
+        }
+
+        .btn-action{
+            width: 33%;
+        }
+
+
+        .col-middle , select, {
+            width: 15%;
+        }
+
+         input[type=text]{
+            width: 25%;
+            margin-right: 20px;
+        }
+
+        
+
+}
+
+@media screen and (min-width: 992px){
+        #container {
+                 width: 970px;
+        }
+         select, .btn-action{
+            width: 20%;
+        }
+         input[type=text]{
+            width: 29%;
+            margin-right: 5px;
+        }
+       
+
+}
+
+@media screen and (min-width: 1200px){
+        #container {
+            width: 1024px;
+        }
+
+        .col-middle{
+            width:  50%;
+        }
+
+ select, .btn-action{
+            width: 20%;
+
+        }
+
+
+
+   
+ .col-middle > label{
+          width:  40%;
+        }
+
+        input[type=text]{
+            width: 29%;
+            margin-right: 5px;
+        }
+
+
+
+
+      
+
+
+
+
+}
+
+
+ .col-middle{
+     float: left;
+     margin-bottom: 20px;
+
+      }
+
+
+
+
+
+      /*cabeçalho*/
+header {
+    width: 100%;
+    background-color: #B9090B;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+
+}
+
+
+.logo{
+        width: 200px;
+        margin: 10px;
+}
+
+
+/*corpo*/
+
+
+.row{  width: 100%;
+    float: left;
+    margin: 20px 0 20px 0;
+    color: #999999;
+
+
+ }
+
+ 
+
+
+
+/*busca*/
+
+input{float:left; height: 40px;border-radius: 4px;
+     color: #999999;
+    background-color: #171717;
+    border: none;
+    padding-left: 20px;
+}
+
+
+
+ select{
+    float:left; 
+    height: 45px;
+    border-radius: 4px;
+    color: #999999;
+    background-color: #171717;
+    border:none;
+   
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    padding: 15px;
+
+
+}
+
+.col-middle > label{
+   
+   margin-top:10px;
+   display:inline-block;
+   min-height: 20px;
+   color: #999;
+   font-weight: 600;
+   width: 180px;
+   
+
+}
+
+input[type='checkbox']{
+       width:   20px;
+       height: 20px;
+       float: left;
+       margin-left: 10%;
+
+   }
+
+
+
+
+.btn-action{
+    background-color: #b9090b;
+    color: #fff;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    float:  left;
+    width:  100%;
+    max-width: 195px;
+}
+
+.select-number{
+    width: 50px;
+    float: inherit;
+    padding-left: 3px;
+}
+
+
+input[type=text]{
+    float: left; 
+    margin-top: 10px;       
+}
+
+/*retorno de dados*/
+
+#title{
+    color:  #fff;
+    width:  100%;
+    float:  left;
+}
+
+
+
+
+
+
+</style>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+            <script>
+               $("#movieName").click(function(){
+                 movieName = ($('#name').val()); 
+                
+                      
+               
+               
+                   }
+
+               });
+                
+
+
+               });
+
+     
+
+            </script>
+         </head>
+         <body>
+            <header>
+                <img src="http://netflixroulette.net/img/logo.png" class="logo">
+             </header>
+
+
+            <div id="container">
+
+                     </form>
+
+                      <span id="title"></span>
+               Diretor:<span id="directory"></span>
+              Categoria <span id="category"></span>   
+              Imagem  <img src=#poster id="poster">
+               Ano<span id="year"></span>
+               Tempo<span id="time"></span>
+
+                    
+               </div>
+               <input type="text" class="form-control" id="name" placeholder="Enter Director Name">
+          <div id='movieName' class="input-group-addon"><i class="fa fa-search toggle-loading" >teste</i></div>
+              
+            </div>
+            <footer></footer>
+         </body>
+      </html>
+   </body>
+</html>
